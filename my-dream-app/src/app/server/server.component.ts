@@ -6,5 +6,9 @@ import {Component} from "@angular/core";
     styleUrls: ['./server.component.css']
 })
 export class ServerComponent{
+    status:string = "online" //used for string interpolation
 
+    getStatus(){
+        return this.status
+    }
 }
