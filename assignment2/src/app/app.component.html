@@ -1,0 +1,7 @@
+<div>
+  <label for="username">Enter Username:</label>
+  <input type="text" class="form-control" [(ngModel)]="username" (input)="changeButton()">
+  <p>{{username}}</p>
+  <br>
+  <button type="button" class="btn btn-danger" [disabled]="buttonAvailability" (click)="resetUsername()">Reset Username</button>
+</div>
