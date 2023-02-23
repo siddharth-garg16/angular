@@ -1,0 +1,22 @@
+button{
+    background-color: indigo;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    color: azure;
+    font-size: 1.25em;
+}
+button:hover{
+    filter: brightness(60%);
+    transition: all 0.3s ease;
+}
+
+h1{
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+.change-color{
+    color: hotpink;
+}

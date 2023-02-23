@@ -1,0 +1,10 @@
+<button (click)="changeVisibility()">Toggle Visibilty</button>
+<p *ngIf="isVisible">{{secretText}}</p>
+
+<br>
+
+<h1 
+*ngFor="let count of clickArr" 
+[ngClass]="{'change-color':count>=5}"
+[ngStyle]="{backgroundColor:count>=5?'black':'transparent'}"
+>{{count}}</h1>
