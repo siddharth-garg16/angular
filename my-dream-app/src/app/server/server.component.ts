@@ -8,7 +8,15 @@ import {Component} from "@angular/core";
 export class ServerComponent{
     status:string = "online" //used for string interpolation
 
+    constructor(){
+        this.status = Math.random() > 0.5 ? "online" : "offline"
+    }
+
     getStatus(){
         return this.status
+    }
+
+    getColor(){
+        return this.status==="online" ? "green" : "red"
     }
 }

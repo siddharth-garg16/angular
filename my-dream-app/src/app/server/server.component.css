@@ -1,4 +1,6 @@
-p{
-    color: chartreuse;
-    background-color: black;
+.online-class{
+    color: wheat;
+}
+.offline-class{
+    color: darkblue;
 }
