@@ -9,12 +9,12 @@ export class AppComponent {
   username:string = "";
   buttonAvailability:boolean = true;
 
-  resetUsername(){
-    this.username = ""
+  resetUsername(): void{
+    this.username = "";
     this.buttonAvailability = true;
   }
 
-  changeButton(){
+  changeButton(): void{
     if(this.username){
       this.buttonAvailability = false;
     }else{
