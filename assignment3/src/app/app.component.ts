@@ -11,9 +11,9 @@ export class AppComponent {
   isVisible:boolean = false;
   clickArr:number[] = [];
 
-  changeVisibility(){
-    this.isVisible = !this.isVisible
-    this.clickCount+=1
-    this.clickArr.push(this.clickCount)
+  changeVisibility():void{
+    this.isVisible = !this.isVisible;
+    this.clickCount+=1;
+    this.clickArr.push(this.clickCount);
   }
 }
