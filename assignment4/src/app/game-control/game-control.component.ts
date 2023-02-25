@@ -9,16 +9,16 @@ export class GameControlComponent {
   @Output() intervalFired = new EventEmitter<number>();
   @Output() intervalPaused = new EventEmitter<number>();
   interval;
-  lastNumber = 0;
+  lastNumber:number = 0;
 
-  onStartGame(){
+  onStartGame():void{
     this.interval = setInterval(()=>{
       this.intervalFired.emit(this.lastNumber + 1);
       this.lastNumber++;
     },1000);
   }
 
-  onPauseGame(){
+  onPauseGame():void{
     clearInterval(this.interval);
   }
 }
